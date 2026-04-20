@@ -23,12 +23,12 @@ def generate_launch_description():
                 output='screen',
                 arguments=['--ros-args', '--log-level', 'error'],
                 parameters=[{
-                    'laser_scan_topic' : '/scan',
+                    'laser_scan_topic' : '/scan_merged',
                     'odom_topic' : '/odom_rf2o',
                     'publish_tf' : False,
                     'base_frame_id' : 'base_footprint',
                     'odom_frame_id' : 'odom',
                     'init_pose_from_topic' : '',
-                    'freq' : 20.0}],
+                    'freq' : 50.0}],
             ),
     ])
